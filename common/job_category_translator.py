@@ -1,0 +1,47 @@
+class JobCategoryTranslator:
+    def __init__(self):
+        self.category_mapping = {
+            "Verkauf (ohne Produktspezialisierung)": "Shitje (pa specializim të produktit)",
+            "Lagerwirtschaft, Post und Zustellung, Güterumschlag": "Menaxhimi i Magazinave, Posta dhe Dorëzimi, Qarkullimi i Mallrave",
+            "Maschinenbau- und Betriebstechnik": "Inxhinieri Mekanike dhe Teknikë Operative",
+            "Büro und Sekretariat": "Zyrë dhe Sekretariat",
+            "Elektrotechnik": "Elektroteknikë",
+            "Erziehung, Sozialarbeit, Heilerziehungspflege": "Edukim, Punë Sociale, Kujdesi Shëndetësor Edukativ",
+            "Krankenpflege, Rettungsdienst und Geburtshilfe": "Infermieri, Shërbimet e Ndihmës së Shpejtë dhe Ndihma e Lindjes",
+            "Metallbearbeitung": "Përpunimi i Metaleve",
+            "Altenpflege": "Kujdesi për të Moshuarit",
+            "Reinigung": "Pastrim",
+            "Speisenzubereitung": "Përgatitja e Ushqimeve",
+            "Einkauf und Vertrieb": "Blerje dhe Shitje",
+            "Bau- und Transportgeräteführung": "Drejtimi i Makinerive të Ndërtimit dhe Transportit",
+            "Informatik": "Informatikë",
+            "Klempnerei, Sanitär-, Heizungs- und Klimatechnik": "Hidraulik, Sistemet Sanitare, Ngrohje dhe Teknikë Klimatizimi",
+            "Arzt- und Praxishilfe": "Ndihmë Mjekësore dhe në Praktikën Mjekësore",
+            "IT-Netzwerktechnik, -Administration, -Organisation": "Teknikë e Rrjetave IT, Administrim IT, Organizim IT",
+            "Hochbau": "Ndërtimtari",
+            "Bauplanung und -überwachung, Architektur": "Planifikimi dhe Mbikëqyrja e Ndërtimit, Arkitekturë",
+            "Verkauf von Lebensmitteln": "Shitje e Ushqimeve",
+            "Werbung und Marketing": "Reklamim dhe Marketing",
+            "Holzbe- und -verarbeitung": "Përpunimi i Drurit",
+            "Hotellerie": "Hoteleri",
+            "Aus- und Trockenbau, Isolierung, Zimmerei, Glaserie": "Ndërtim dhe Renovim, Izolim, Punime Druarje dhe Punime me Qelq",
+            "Softwareentwicklung und Programmierung": "Zhvilimi i Softuerit dhe Programimi",
+            "Maler, Stuckateure, Bautenschutz": "Pikturë, Stukaturë dhe Mbrojtje e Ndërtesave",
+            "Hauswirtschaft und Verbraucherberatung": "Ekonomi Shtëpie dhe Këshillim për Konsumatorët",
+            "Gartenbau": "Hortikulturë",
+            "Handel": "Tregti",
+            "Rechtsberatung, -sprechung und -ordnung": "Këshillim Juridik dhe Ligjor",
+            "Körperpflege": "Kujdesi Personal",
+            "Metallboberflächenbehandlung": "Trajtimi i Sipërfaqeve Metalike",
+            "Bodenverlegung": "Shtrimi i Pllakave dhe Tapetave",
+            "Textilverarbeitung": "Përpunimi i Tekstilit",
+            "Drucktechnik, Buchbinderei": "Teknikë Shtypi dhe Librash",
+            "Metallerzeugung": "Prodhimi i Metaleve",
+            "Industrielle Glasherstellung": "Prodhimi Industrial i Qelqit",
+            "Industrielle Keramikherstellung": "Prodhimi Industrial i Keramikës",
+            "Verlags- und Medienwirtschaft": "Botime dhe Media",
+            "Berg-, Tagebau und Sprengtechnik": "Miniera dhe Teknikat e Shpërthimit"
+        }
+
+    def get_translation(self, category):
+        return self.category_mapping.get(category, "Tjera")
